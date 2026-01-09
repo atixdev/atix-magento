@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <atixpaymentgateway>
+                <active>1</active>
+                <model>Atix\PaymentGateway\Model\PaymentGatewayModel</model>
+                <merchant_gateway_key></merchant_gateway_key>
+                <order_status>pending_payment</order_status>
+                <title>Pagar con tarjeta de crédito y débito</title>
+                <description>Servicio de pasarela de pagos de Atix</description>
+                <instructions>Servicio de pasarela de pagos de Atix</instructions>
+                <currency>PEN</currency>
+                <debug>1</debug>
+                <group>offline</group>
+            </atixpaymentgateway>
+        </payment>
+    </default>
+</config>

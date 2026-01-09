@@ -1,0 +1,20 @@
+"Payment processing failed.","Payment processing failed."
+"Order not found","Order not found"
+"Payment link was generated successful.","Payment link was generated successful."
+"Token not provided","Token not provided"
+"Place Order","Place Order"
+"Payment failed. Please try to place your order again later.","Payment failed. Please try to place your order again later."
+"The payment was confirmed successfully. For your order ","The payment was confirmed successfully. For your order "
+"Visit your order list or email inbox for more details.","Visit your order list or email inbox for more details."
+"Atix Payment Gateway","Atix Payment Gateway"
+Enabled,Enabled
+Title,Title
+Description,Description
+"Api Key PEN","Api Key PEN"
+Instructions,Instructions
+Debug,Debug
+"Sort Order","Sort Order"
+"Store Url","Store Url"
+"Api Key USD","Api Key USD"
+"Currency is not allowed","Currency is not allowed"
+"Upon confirming your purchase, you will be redirected to the Atix site to make your payment.","Upon confirming your purchase, you will be redirected to the Atix site to make your payment."
