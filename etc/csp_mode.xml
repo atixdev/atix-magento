@@ -1,0 +1,9 @@
+<mode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_mode.xsd">
+    <storefront>
+        <report_only>0</report_only>
+    </storefront>
+    <admin>
+        <report_only>0</report_only>
+    </admin>
+</mode>

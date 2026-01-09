@@ -1,0 +1,73 @@
+<div
+    class="payment-method"
+    data-bind="css: {'_active': (getCode() == isChecked())}"
+>
+    <div
+        class="payment-method-title field choice"
+        style="display: flex; align-items: center"
+    >
+        <input
+            type="radio"
+            name="payment[method]"
+            class="radio"
+            data-bind="attr: {'id': getCode()}, value: getCode(), checked: isChecked, click: selectPaymentMethod, visible: isRadioButtonVisible()"
+        />
+        <label data-bind="attr: {'for': getCode()}" class="label">
+            <span data-bind="text: getTitle()"></span>
+        </label>
+        <img
+            data-bind="attr: {src: getLogoUrl()}"
+            alt="Payment Logo"
+            class="payment-logo"
+            width="150"
+        />
+    </div>
+    <div class="payment-method-content">
+        <!-- ko foreach: getRegion('messages') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+        <div class="payment-method-billing-address">
+            <!-- ko foreach: $parent.getRegion(getBillingAddressFormName()) -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+        <div class="checkout-agreements-block">
+            <!-- ko foreach: $parent.getRegion('before-place-order') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+        <div 
+        style="font-size: 13px;
+    color: rgba(0 0 0 / 0.6);
+    padding-bottom: 2rem;"
+        data-bind="i18n: 'Upon confirming your purchase, you will be redirected to the Atix site to make your payment.'"></div>
+        <!-- Add your custom payment form details here -->
+        <!-- <div class="field">
+            <label for="custompayment_field" class="label">
+                <span>Custom Field</span>
+            </label>
+            <div class="control">
+                <input
+                    id="custompayment_field"
+                    name="payment[custom_field]"
+                    type="text"
+                    data-bind="value: customField"
+                />
+            </div>
+        </div> -->
+
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button
+                    class="action primary checkout"
+                    type="submit"
+                    data-bind="click: placeOrder, attr: {title: $t('Place Order')}, enable: (getCode() == isChecked())"
+                    disabled
+                    value="Place Order"
+                >
+                    <span data-bind="i18n: 'Place Order'"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

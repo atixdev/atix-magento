@@ -1,0 +1,20 @@
+"Payment processing failed.","No se ha podido procesar el pago."
+"Order not found","Pedido no encontrado"
+"Payment link was generated successful.","El enlace de pago se ha generado correctamente."
+"Token not provided","Token no proporcionado"
+"Place Order","Realizar Pedido"
+"Payment failed. Please try to place your order again later.","Pago fallido. Vuelva a intentar realizar su pedido más tarde."
+"The payment was confirmed successfully. For your order ","El pago fue confirmado con éxito. Para tu pedido "
+"Visit your order list or email inbox for more details.","Visita tu lista de pedidos o la bandeja de entrada de tu correo electrónico para obtener más detalles."
+"Atix Payment Gateway","Pasarela de pago Atix"
+Enabled,Activado
+Title,Título
+Description,Descripción
+"Api Key PEN","Api Key PEN"
+Instructions,Instrucciones
+Debug,"Modo prueba"
+"Sort Order","Orden de Clasificación"
+"Store Url","URL de la tienda"
+"Api Key USD","Api Key USD"
+"Currency is not allowed","La moneda no está permitida"
+"Upon confirming your purchase, you will be redirected to the Atix site to make your payment.","Al confirmar su compra, será redirigido al sitio de Atix para realizar su pago."
